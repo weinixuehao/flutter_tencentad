@@ -5,7 +5,8 @@
 基于上游 `flutter_tencentad` 1.3.3。iOS 原生信息流容器启用了 `clipsToBounds`，
 防止原生广告视图绘制到分配区域之外；同时移除了广告回调和事件流中的调试
 `print` 输出。Android 仓库配置使用 `mavenCentral()` 替代 Gradle 9 已移除的
-`jcenter()`。后续合并上游更新时，请保留这些改动并验证 iOS 与 Android 构建。
+`jcenter()`，插件编译 SDK 对齐到应用的 API 37，以满足 AndroidX AAR 元数据要求。
+后续合并上游更新时，请保留这些改动并验证 iOS 与 Android 构建。
 
 <p>
 <a href="https://pub.flutter-io.cn/packages/flutter_tencentad"><img src=https://img.shields.io/pub/v/flutter_tencentad?color=orange></a>

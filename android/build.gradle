@@ -29,7 +29,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace = "com.gstory.flutter_tencentad"
-    compileSdkVersion 31
+    compileSdkVersion 37
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
