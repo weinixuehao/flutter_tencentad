@@ -1,5 +1,11 @@
 # 腾讯优量汇(广点通)广告 Flutter版本（支持bidding）
 
+## 本 fork 维护说明
+
+基于上游 `flutter_tencentad` 1.3.3。iOS 原生信息流容器启用了 `clipsToBounds`，
+防止原生广告视图绘制到分配区域之外；同时移除了广告回调和事件流中的调试
+`print` 输出。后续合并上游更新时，请保留这些改动并验证 iOS 广告展示。
+
 <p>
 <a href="https://pub.flutter-io.cn/packages/flutter_tencentad"><img src=https://img.shields.io/pub/v/flutter_tencentad?color=orange></a>
 <a href="https://pub.flutter-io.cn/packages/flutter_tencentad"><img src=https://img.shields.io/pub/likes/flutter_tencentad></a>

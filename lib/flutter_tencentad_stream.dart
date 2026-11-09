@@ -23,7 +23,6 @@ class FlutterTencentAdStream {
           flutterTencentadInteractionCallBack}) {
     StreamSubscription _adStream =
         tencentAdEventEvent.receiveBroadcastStream().listen((data) {
-      print("$data");
       switch (data[FlutterTencentadType.adType]) {
         ///激励广告
         case FlutterTencentadType.rewardAd:

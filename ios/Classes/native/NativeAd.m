@@ -88,6 +88,7 @@
             }
         }];
         _container = [[UIView alloc] initWithFrame:frame];
+        _container.clipsToBounds = YES;
         [self loadNativeAd];
     }
     return self;
