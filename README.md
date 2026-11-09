@@ -6,6 +6,7 @@
 防止原生广告视图绘制到分配区域之外；同时移除了广告回调和事件流中的调试
 `print` 输出。Android 仓库配置使用 `mavenCentral()` 替代 Gradle 9 已移除的
 `jcenter()`，插件编译 SDK 对齐到应用的 API 37，以满足 AndroidX AAR 元数据要求。
+下载确认弹窗直接读取 `DisplayMetrics`，避免 Java 源码依赖 Kotlin 对象的编译顺序。
 后续合并上游更新时，请保留这些改动并验证 iOS 与 Android 构建。
 
 <p>
